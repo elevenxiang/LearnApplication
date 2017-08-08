@@ -17,6 +17,9 @@ public class SubActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        System.out.println("SubActivity onCreate() !");
+
         setContentView(R.layout.activity_sub);
 
         tv = (TextView) findViewById(R.id.text_view);

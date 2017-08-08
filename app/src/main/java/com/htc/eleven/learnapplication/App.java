@@ -7,7 +7,7 @@ import android.app.Application;
  */
 
 public class App extends Application {
-    
+
     private String data = "default";
 
     public String getData() {
@@ -16,5 +16,20 @@ public class App extends Application {
 
     public void setData(String data) {
         this.data = data;
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        System.out.println("Application onCreate() !");
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+
+        System.out.println("Application onTerminate() !");
+
     }
 }
